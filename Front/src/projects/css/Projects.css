@@ -1,0 +1,30 @@
+.content-projects {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-content {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color: rgba(39, 244, 248, 0.56);
+    border-radius: 20px;
+}
+
+.title-projets {
+    display: flex;
+    justify-content: center;
+}
+
+.button-content {
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    margin: 20px;
+    max-width: 320px;
+    border-radius: 15px;
+}
