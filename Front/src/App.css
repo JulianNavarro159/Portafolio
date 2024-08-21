@@ -9,7 +9,7 @@ body {
   .content {
     position: relative;
     z-index: 1; /* Asegura que el contenido esté delante del canvas */
-    padding: 20px;
+    padding: 0px;
     color: white; /* Ajusta según tu diseño */
   }
   

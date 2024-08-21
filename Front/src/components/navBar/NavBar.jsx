@@ -7,14 +7,14 @@ import './NavBar.css';
 const theme = createTheme({
   palette: {
     primary: {
-      main: 'rgba(39, 244, 248, 0.56)',
+      main: 'rgb(45, 182, 184)',
     },
   },
 });
 
 export const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
-  const pages = ['Home', 'About', 'Projects'];
+  const pages = ['Home', 'Projects', 'Contact me'];
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -26,7 +26,7 @@ export const NavBar = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <AppBar className='AppBar' position="fixed" sx={{ width: 'calc(100% - 16px)', mx: '8px' }}>
+      <AppBar className='AppBar' position='sticky'>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Typography
