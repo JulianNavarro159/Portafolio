@@ -31,7 +31,7 @@ export const Projects = () => {
                             onMouseOver={() => handleMouseOver(videoRef1)} 
                             onMouseOut={() => handleMouseOut(videoRef1)}
                         >
-                            <source src='src/assets/Video E_commerce.mp4' />
+                            <source src='public/assets/Video E_commerce.mp4' />
                         </video>
                         <Box className="button-content">
                             <Button>
@@ -68,7 +68,7 @@ export const Projects = () => {
                             onMouseOver={() => handleMouseOver(videoRef2)} 
                             onMouseOut={() => handleMouseOut(videoRef2)}
                         >
-                            <source src='src/assets/ca90875419bb4b0bb98624380a89cfee.mp4' />
+                            <source src='public/assets/ca90875419bb4b0bb98624380a89cfee.mp4' />
                         </video>
                         <Box className="button-content">
                             <Button>
