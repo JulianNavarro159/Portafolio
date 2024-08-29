@@ -54,7 +54,7 @@ export const ContactMe = () => {
                             <IconButton
                                 color="success"
                                 component="a"
-                                href="https://wa.me/573005789052"
+                                href="https://wa.me/3013433670"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 sx={{ fontSize: { xs: '2.5rem', md: '4rem', lg: '5rem' } }}

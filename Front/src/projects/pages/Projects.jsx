@@ -17,10 +17,10 @@ export const Projects = () => {
     return (
         <Grid className='project-container' m={5}>
             <Grid container className='container-project' spacing={3} sx={{ marginLeft: 0, marginTop: 0}}>
-                    <Grid xs={12} className="title-content">
-                        <Typography variant="h6">PROJECTS</Typography>
-                    </Grid>
-                <Grid className='projects-container' sx={{ display: 'flex', flexWrap: 'wrap', gap: 2 }}>
+                <Grid xs={12} className="title-content">
+                    <Typography variant="h6">PROJECTS</Typography>
+                </Grid>
+                <Grid container className='projects-container' m={3} spacing={2}>
                     <Box className="video-content">
                         <Typography variant='h6' className="title-projets">E-commerce Tech</Typography>
                         <video 

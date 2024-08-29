@@ -10,8 +10,6 @@
     justify-content: center;
     align-items: center;
     height: auto;
-    border-radius: 20px;
-    /* margin-top: 20px; */
     background-color: rgb(52, 51, 51);
     border-radius: 30px;
     padding: 10px;
@@ -27,7 +25,6 @@
     display: inline-block;
     text-align: start;
     margin-bottom: 10px;
-    /* background-color: black; */
     border-radius: 20px;
     padding: 4px;
 }
@@ -45,10 +42,7 @@
 
 .img {
     width: 100%;
-    max-width: 400px; /* Limita el tamaño máximo de la imagen */
+    max-width: 400px;
     object-fit: cover;
-    mask-image: linear-gradient(
-        black 70%,
-        transparent
-    );
+    mask-image: linear-gradient(black 70%, transparent);
 }
