@@ -32,11 +32,11 @@
 }
 
 .icon-button {
-    font-size: 6rem; /* Valor base que puede ser ajustado con media queries */
+    font-size: 6rem;
 }
 
 .icon {
-    font-size: inherit;
+    margin: 20px;
 }
 
 .download-button {
@@ -44,7 +44,7 @@
     padding: 8px 16px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .contact-box {
         gap: 10px;
     }
@@ -53,8 +53,12 @@
         flex-direction: column;
     }
 
+    .icon {
+        margin: 5px;
+    }
+
     .icon-button {
-        font-size: 8rem;
+        font-size: 2.5rem;
     }
 
     .download-button {

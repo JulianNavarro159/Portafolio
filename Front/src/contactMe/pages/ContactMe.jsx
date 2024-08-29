@@ -21,8 +21,8 @@ export const ContactMe = () => {
                     <Typography variant="h6">CONTACT ME</Typography>
                 </Grid>
                 <Box display="flex" flexDirection="column" alignItems="center" gap={2}>
-                    <Box display="flex" justifyContent="center" gap={2}>
-                        <Box display="flex" flexDirection="column" alignItems="center" m={5}>
+                    <Box className='icon-container' display="flex" justifyContent="center" gap={2}>
+                        <Box display="flex" flexDirection="column" alignItems="center" className='icon'>
                             <IconButton
                                 color="primary"
                                 component="a"
@@ -36,7 +36,7 @@ export const ContactMe = () => {
                             <Typography variant="body2" sx={{ fontSize: { xs: '0.75rem', md: '1rem' } }}>LinkedIn</Typography>
                         </Box>
 
-                        <Box display="flex" flexDirection="column" alignItems="center" m={5}>
+                        <Box display="flex" flexDirection="column" alignItems="center" className='icon'>
                             <IconButton
                                 color="inherit"
                                 component="a"
@@ -50,7 +50,7 @@ export const ContactMe = () => {
                             <Typography variant="body2" sx={{ fontSize: { xs: '0.75rem', md: '1rem' } }}>GitHub</Typography>
                         </Box>
 
-                        <Box display="flex" flexDirection="column" alignItems="center" m={5}>
+                        <Box display="flex" flexDirection="column" alignItems="center" className='icon'>
                             <IconButton
                                 color="success"
                                 component="a"
