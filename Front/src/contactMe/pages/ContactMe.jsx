@@ -15,60 +15,62 @@ export const ContactMe = () => {
     };
 
     return (
-        <Grid className="contacMe-container" m={5}>
-            <Grid container className="contacMe" spacing={3} sx={{ marginLeft: 0, marginTop: 0}}>
-                <Typography variant="h6" align="center" className="title-content" gutterBottom>
-                    CONTACT ME
-                </Typography>
+        <Grid className='contacMe-container' m={5}>
+            <Grid container className='contacMe' spacing={3} sx={{ marginLeft: 0, marginTop: 0 }}>
+                <Grid xs={12} className="title-content">
+                    <Typography variant="h6">CONTACT ME</Typography>
+                </Grid>
                 <Box display="flex" flexDirection="column" alignItems="center" gap={2}>
-                    <Box className="icon-container">
-                        <Box display="flex" flexDirection="column" alignItems="center">
+                    <Box display="flex" justifyContent="center" gap={2}>
+                        <Box display="flex" flexDirection="column" alignItems="center" m={5}>
                             <IconButton
                                 color="primary"
                                 component="a"
                                 href="https://www.linkedin.com/in/julian-santiago-navarro-mart%C3%ADnez-844963203/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="icon-button"
+                                sx={{ fontSize: { xs: '2.5rem', md: '4rem', lg: '5rem' } }}
                             >
-                                <LinkedInIcon className="icon" />
+                                <LinkedInIcon sx={{ fontSize: 'inherit' }} />
                             </IconButton>
-                            <Typography variant="body2">LinkedIn</Typography>
+                            <Typography variant="body2" sx={{ fontSize: { xs: '0.75rem', md: '1rem' } }}>LinkedIn</Typography>
                         </Box>
-                        <Box display="flex" flexDirection="column" alignItems="center">
+
+                        <Box display="flex" flexDirection="column" alignItems="center" m={5}>
                             <IconButton
                                 color="inherit"
                                 component="a"
                                 href="https://github.com/JulianNavarro159"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="icon-button"
+                                sx={{ fontSize: { xs: '2.5rem', md: '4rem', lg: '5rem' } }}
                             >
-                                <GitHubIcon className="icon" />
+                                <GitHubIcon sx={{ fontSize: 'inherit' }} />
                             </IconButton>
-                            <Typography variant="body2">GitHub</Typography>
+                            <Typography variant="body2" sx={{ fontSize: { xs: '0.75rem', md: '1rem' } }}>GitHub</Typography>
                         </Box>
-                        <Box display="flex" flexDirection="column" alignItems="center">
+
+                        <Box display="flex" flexDirection="column" alignItems="center" m={5}>
                             <IconButton
                                 color="success"
                                 component="a"
                                 href="https://wa.me/573005789052"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="icon-button"
+                                sx={{ fontSize: { xs: '2.5rem', md: '4rem', lg: '5rem' } }}
                             >
-                                <WhatsAppIcon className="icon" />
+                                <WhatsAppIcon sx={{ fontSize: 'inherit' }} />
                             </IconButton>
-                            <Typography variant="body2">WhatsApp</Typography>
+                            <Typography variant="body2" sx={{ fontSize: { xs: '0.75rem', md: '1rem' } }}>WhatsApp</Typography>
                         </Box>
                     </Box>
-                    <Box display="flex" justifyContent="center" alignItems="center">
+                    <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center">
                         <Button
                             variant="contained"
                             color="primary"
                             startIcon={<GetAppIcon />}
                             onClick={handleDownloadCV}
-                            className="download-button"
+                            sx={{ fontSize: { xs: '0.75rem', md: '1rem', lg: '1.25rem' } }}
                         >
                             Mi CV
                         </Button>

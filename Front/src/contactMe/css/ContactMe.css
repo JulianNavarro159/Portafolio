@@ -13,6 +13,13 @@
     background-color: rgb(52, 51, 51);
     border-radius: 30px;
     padding: 20px;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     width: 100%;
 }
 
@@ -20,11 +27,12 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
 }
 
 .icon-button {
-    font-size: 3rem; /* Tamaño base ajustable */
+    font-size: 6rem; /* Valor base que puede ser ajustado con media queries */
 }
 
 .icon {
@@ -37,13 +45,16 @@
 }
 
 @media (max-width: 600px) {
-    .icon-container {
-        flex-direction: column;
+    .contact-box {
         gap: 10px;
     }
 
+    .icon-container {
+        flex-direction: column;
+    }
+
     .icon-button {
-        font-size: 2.5rem; /* Tamaño ajustado para pantallas pequeñas */
+        font-size: 8rem;
     }
 
     .download-button {
