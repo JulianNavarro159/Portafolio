@@ -1,6 +1,5 @@
 import { Box, Grid, Typography } from "@mui/material";
-import { QrUI } from "../../ui/QrUI";
-import fotoPerfil2 from '../../../public/assets/Foto-perfil-2.png';
+import fotoPerfil2 from '/assets/Foto-perfil-2.png';
 import '../css/Home.css';
 
 export const Home = () => {

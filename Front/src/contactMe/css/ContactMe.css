@@ -1,0 +1,53 @@
+.contacMe-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(52, 51, 51);
+    border-radius: 30px;
+    padding: 20px;
+    width: 100%;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.icon-button {
+    font-size: 3rem; /* Tamaño base ajustable */
+}
+
+.icon {
+    font-size: inherit;
+}
+
+.download-button {
+    font-size: 1rem;
+    padding: 8px 16px;
+}
+
+@media (max-width: 600px) {
+    .icon-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .icon-button {
+        font-size: 2.5rem; /* Tamaño ajustado para pantallas pequeñas */
+    }
+
+    .download-button {
+        font-size: 0.75rem;
+        padding: 6px 12px;
+    }
+}
