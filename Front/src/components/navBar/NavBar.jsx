@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { AppBar, Box, Button, Container, IconButton, Menu, MenuItem, Toolbar, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import './NavBar.css';
+import { useSmoothScroll } from '../../hooks/useSmoothScroll';
 
 const theme = createTheme({
   palette: {
@@ -14,7 +15,9 @@ const theme = createTheme({
 
 export const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
-  const pages = ['Home', 'Projects', 'Contact me'];
+  const pages = ['HOME', 'PROJECTS', 'CONTACT ME'];
+
+  useSmoothScroll();
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -33,7 +36,7 @@ export const NavBar = () => {
               variant="h6"
               noWrap
               component="a"
-              href="#app-bar-with-responsive-menu"
+              href="#home" // ID en minúscula para coincidir
               sx={{
                 mr: 2,
                 display: { xs: 'none', md: 'flex' },
@@ -78,7 +81,14 @@ export const NavBar = () => {
               >
                 {pages.map((page) => (
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
+                    <Typography textAlign="center">
+                    <a
+                      href={`#${page.toLowerCase().replace(' ', '')}`}
+                      className="menu-link" /* Añadir la clase */
+                    >
+                      {page}
+                    </a>
+                    </Typography>
                   </MenuItem>
                 ))}
               </Menu>
@@ -87,7 +97,7 @@ export const NavBar = () => {
               variant="h5"
               noWrap
               component="a"
-              href="#app-bar-with-responsive-menu"
+              href="#home"
               sx={{
                 mr: 2,
                 display: { xs: 'flex', md: 'none' },
@@ -105,7 +115,8 @@ export const NavBar = () => {
               {pages.map((page) => (
                 <Button
                   key={page}
-                  onClick={handleCloseNavMenu}
+                  component="a"
+                  href={`#${page.toLowerCase().replace(' ', '')}`} // Asegura que el href coincida con los IDs
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
                   {page}

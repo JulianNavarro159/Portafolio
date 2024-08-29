@@ -2,3 +2,8 @@
     margin-top: 10px;
     border-radius: 15px;
 }
+
+.menu-link {
+    text-decoration: none; /* Quita la subrayado */
+    color: inherit; /* Mantiene el color de texto heredado */
+}

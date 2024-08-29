@@ -15,7 +15,7 @@ export const Projects = () => {
     };
 
     return (
-        <Grid className='project-container' m={5}>
+        <Grid className='project-container' m={1} marginTop={5}>
             <Grid container className='container-project' spacing={3} sx={{ marginLeft: 0, marginTop: 0}}>
                 <Grid xs={12} className="title-content">
                     <Typography variant="h6">PROJECTS</Typography>
